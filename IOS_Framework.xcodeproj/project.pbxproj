@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F13686E5219A68A600BE3323 /* ARDCaptureController.h in Headers */ = {isa = PBXBuildFile; fileRef = F13686E3219A68A600BE3323 /* ARDCaptureController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F13686E6219A68A600BE3323 /* ARDCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13686E4219A68A600BE3323 /* ARDCaptureController.m */; };
+		F15FA5372195774B00256F29 /* IOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15FA52D2195774B00256F29 /* IOS_Framework.framework */; };
+		F15FA53C2195774B00256F29 /* Varistar_IOS_FrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15FA53B2195774B00256F29 /* Varistar_IOS_FrameworkTests.m */; };
+		F15FA53E2195774B00256F29 /* Varistar_IOS_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = F15FA5302195774B00256F29 /* Varistar_IOS_Framework.h */; };
+		F15FA5592195B62400256F29 /* JFRSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = F15FA5532195B62400256F29 /* JFRSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F15FA55A2195B62400256F29 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F15FA5542195B62400256F29 /* LICENSE */; };
+		F15FA55B2195B62400256F29 /* JFRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F15FA5552195B62400256F29 /* JFRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F15FA55C2195B62400256F29 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F15FA5562195B62400256F29 /* README.md */; };
+		F15FA55D2195B62400256F29 /* JFRSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F15FA5572195B62400256F29 /* JFRSecurity.m */; };
+		F15FA55E2195B62400256F29 /* JFRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F15FA5582195B62400256F29 /* JFRWebSocket.m */; };
+		F16882EC21993DA3006F9924 /* ApiController.h in Headers */ = {isa = PBXBuildFile; fileRef = F16882EA21993D9A006F9924 /* ApiController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F16882ED21993DA3006F9924 /* ApiController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16882EB21993DA1006F9924 /* ApiController.m */; };
+		F16883AD21994998006F9924 /* RTCIceCandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883A521994998006F9924 /* RTCIceCandidate+JSON.m */; };
+		F16883AE21994998006F9924 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883A621994998006F9924 /* RTCSessionDescription+JSON.m */; };
+		F16883AF21994998006F9924 /* RTCMediaConstraints+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883A721994998006F9924 /* RTCMediaConstraints+JSON.h */; };
+		F16883B021994998006F9924 /* RTCSessionDescription+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883A821994998006F9924 /* RTCSessionDescription+JSON.h */; };
+		F16883B121994998006F9924 /* RTCIceServer+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883A921994998006F9924 /* RTCIceServer+JSON.h */; };
+		F16883B221994998006F9924 /* RTCMediaConstraints+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883AA21994998006F9924 /* RTCMediaConstraints+JSON.m */; };
+		F16883B321994998006F9924 /* RTCIceServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883AB21994998006F9924 /* RTCIceServer+JSON.m */; };
+		F16883B421994998006F9924 /* RTCIceCandidate+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883AC21994998006F9924 /* RTCIceCandidate+JSON.h */; };
+		F16883B821994A28006F9924 /* RTCAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883B521994A28006F9924 /* RTCAppClient.m */; };
+		F16883B921994A28006F9924 /* RTCAppClient+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883B621994A28006F9924 /* RTCAppClient+Internal.h */; };
+		F16883BA21994A28006F9924 /* RTCAppClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883B721994A28006F9924 /* RTCAppClient.h */; };
+		F16883BD21994A33006F9924 /* ARDUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883BB21994A32006F9924 /* ARDUtilities.h */; };
+		F16883BE21994A33006F9924 /* ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883BC21994A32006F9924 /* ARDUtilities.m */; };
+		F16883C421994A3D006F9924 /* ARDSettingsModel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883BF21994A3D006F9924 /* ARDSettingsModel+Private.h */; };
+		F16883C521994A3D006F9924 /* ARDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883C021994A3D006F9924 /* ARDSettingsModel.m */; };
+		F16883C621994A3D006F9924 /* ARDSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883C121994A3D006F9924 /* ARDSettingsStore.h */; };
+		F16883C721994A3D006F9924 /* ARDSettingsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883C221994A3D006F9924 /* ARDSettingsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F16883C821994A3D006F9924 /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883C321994A3D006F9924 /* ARDSettingsStore.m */; };
+		F16883CB21994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = F16883C921994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.h */; };
+		F16883CC21994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = F16883CA21994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.m */; };
+		F17A787E21AE96BC00E6D56F /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17A787C21AE96B600E6D56F /* WebRTC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F15FA5382195774B00256F29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15FA5242195774B00256F29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15FA52C2195774B00256F29;
+			remoteInfo = Varistar_IOS_Framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F13686E3219A68A600BE3323 /* ARDCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDCaptureController.h; sourceTree = "<group>"; };
+		F13686E4219A68A600BE3323 /* ARDCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDCaptureController.m; sourceTree = "<group>"; };
+		F15FA52D2195774B00256F29 /* IOS_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOS_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15FA5302195774B00256F29 /* Varistar_IOS_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Varistar_IOS_Framework.h; sourceTree = "<group>"; };
+		F15FA5312195774B00256F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15FA5362195774B00256F29 /* IOS_FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15FA53B2195774B00256F29 /* Varistar_IOS_FrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Varistar_IOS_FrameworkTests.m; sourceTree = "<group>"; };
+		F15FA53D2195774B00256F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15FA5532195B62400256F29 /* JFRSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRSecurity.h; sourceTree = "<group>"; };
+		F15FA5542195B62400256F29 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F15FA5552195B62400256F29 /* JFRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRWebSocket.h; sourceTree = "<group>"; };
+		F15FA5562195B62400256F29 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F15FA5572195B62400256F29 /* JFRSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRSecurity.m; sourceTree = "<group>"; };
+		F15FA5582195B62400256F29 /* JFRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRWebSocket.m; sourceTree = "<group>"; };
+		F16882EA21993D9A006F9924 /* ApiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiController.h; sourceTree = "<group>"; };
+		F16882EB21993DA1006F9924 /* ApiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiController.m; sourceTree = "<group>"; };
+		F16883A521994998006F9924 /* RTCIceCandidate+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceCandidate+JSON.m"; sourceTree = "<group>"; };
+		F16883A621994998006F9924 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
+		F16883A721994998006F9924 /* RTCMediaConstraints+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCMediaConstraints+JSON.h"; sourceTree = "<group>"; };
+		F16883A821994998006F9924 /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCSessionDescription+JSON.h"; sourceTree = "<group>"; };
+		F16883A921994998006F9924 /* RTCIceServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceServer+JSON.h"; sourceTree = "<group>"; };
+		F16883AA21994998006F9924 /* RTCMediaConstraints+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCMediaConstraints+JSON.m"; sourceTree = "<group>"; };
+		F16883AB21994998006F9924 /* RTCIceServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceServer+JSON.m"; sourceTree = "<group>"; };
+		F16883AC21994998006F9924 /* RTCIceCandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+JSON.h"; sourceTree = "<group>"; };
+		F16883B521994A28006F9924 /* RTCAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCAppClient.m; sourceTree = "<group>"; };
+		F16883B621994A28006F9924 /* RTCAppClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCAppClient+Internal.h"; sourceTree = "<group>"; };
+		F16883B721994A28006F9924 /* RTCAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCAppClient.h; sourceTree = "<group>"; };
+		F16883BB21994A32006F9924 /* ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDUtilities.h; sourceTree = "<group>"; };
+		F16883BC21994A32006F9924 /* ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDUtilities.m; sourceTree = "<group>"; };
+		F16883BF21994A3D006F9924 /* ARDSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDSettingsModel+Private.h"; sourceTree = "<group>"; };
+		F16883C021994A3D006F9924 /* ARDSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
+		F16883C121994A3D006F9924 /* ARDSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsStore.h; sourceTree = "<group>"; };
+		F16883C221994A3D006F9924 /* ARDSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsModel.h; sourceTree = "<group>"; };
+		F16883C321994A3D006F9924 /* ARDSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsStore.m; sourceTree = "<group>"; };
+		F16883C921994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCVideoCodecInfo+HumanReadable.h"; sourceTree = "<group>"; };
+		F16883CA21994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCVideoCodecInfo+HumanReadable.m"; sourceTree = "<group>"; };
+		F17A787C21AE96B600E6D56F /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F15FA52A2195774B00256F29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17A787E21AE96BC00E6D56F /* WebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15FA5332195774B00256F29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15FA5372195774B00256F29 /* IOS_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F15FA5232195774B00256F29 = {
+			isa = PBXGroup;
+			children = (
+				F17A787C21AE96B600E6D56F /* WebRTC.framework */,
+				F15FA52F2195774B00256F29 /* IOS_Framework */,
+				F15FA53A2195774B00256F29 /* IOS_FrameworkTests */,
+				F15FA52E2195774B00256F29 /* Products */,
+				F16882FA219942E4006F9924 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F15FA52E2195774B00256F29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F15FA52D2195774B00256F29 /* IOS_Framework.framework */,
+				F15FA5362195774B00256F29 /* IOS_FrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F15FA52F2195774B00256F29 /* IOS_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F1688338219944C3006F9924 /* rtc_controllers */,
+				F15FA5522195B62400256F29 /* jetfire */,
+				F15FA5302195774B00256F29 /* Varistar_IOS_Framework.h */,
+				F16882EA21993D9A006F9924 /* ApiController.h */,
+				F16882EB21993DA1006F9924 /* ApiController.m */,
+				F15FA5312195774B00256F29 /* Info.plist */,
+			);
+			path = IOS_Framework;
+			sourceTree = "<group>";
+		};
+		F15FA53A2195774B00256F29 /* IOS_FrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F15FA53B2195774B00256F29 /* Varistar_IOS_FrameworkTests.m */,
+				F15FA53D2195774B00256F29 /* Info.plist */,
+			);
+			path = IOS_FrameworkTests;
+			sourceTree = "<group>";
+		};
+		F15FA5522195B62400256F29 /* jetfire */ = {
+			isa = PBXGroup;
+			children = (
+				F15FA5532195B62400256F29 /* JFRSecurity.h */,
+				F15FA5542195B62400256F29 /* LICENSE */,
+				F15FA5552195B62400256F29 /* JFRWebSocket.h */,
+				F15FA5562195B62400256F29 /* README.md */,
+				F15FA5572195B62400256F29 /* JFRSecurity.m */,
+				F15FA5582195B62400256F29 /* JFRWebSocket.m */,
+			);
+			path = jetfire;
+			sourceTree = "<group>";
+		};
+		F16882FA219942E4006F9924 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1688338219944C3006F9924 /* rtc_controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F13686E3219A68A600BE3323 /* ARDCaptureController.h */,
+				F13686E4219A68A600BE3323 /* ARDCaptureController.m */,
+				F16883B721994A28006F9924 /* RTCAppClient.h */,
+				F16883B621994A28006F9924 /* RTCAppClient+Internal.h */,
+				F16883B521994A28006F9924 /* RTCAppClient.m */,
+				F16883AC21994998006F9924 /* RTCIceCandidate+JSON.h */,
+				F16883A521994998006F9924 /* RTCIceCandidate+JSON.m */,
+				F16883A921994998006F9924 /* RTCIceServer+JSON.h */,
+				F16883AB21994998006F9924 /* RTCIceServer+JSON.m */,
+				F16883A721994998006F9924 /* RTCMediaConstraints+JSON.h */,
+				F16883AA21994998006F9924 /* RTCMediaConstraints+JSON.m */,
+				F16883A821994998006F9924 /* RTCSessionDescription+JSON.h */,
+				F16883A621994998006F9924 /* RTCSessionDescription+JSON.m */,
+				F16883BB21994A32006F9924 /* ARDUtilities.h */,
+				F16883BC21994A32006F9924 /* ARDUtilities.m */,
+				F16883C221994A3D006F9924 /* ARDSettingsModel.h */,
+				F16883C021994A3D006F9924 /* ARDSettingsModel.m */,
+				F16883BF21994A3D006F9924 /* ARDSettingsModel+Private.h */,
+				F16883C121994A3D006F9924 /* ARDSettingsStore.h */,
+				F16883C321994A3D006F9924 /* ARDSettingsStore.m */,
+				F16883C921994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.h */,
+				F16883CA21994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.m */,
+			);
+			path = rtc_controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F15FA5282195774B00256F29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16883B421994998006F9924 /* RTCIceCandidate+JSON.h in Headers */,
+				F15FA55B2195B62400256F29 /* JFRWebSocket.h in Headers */,
+				F16883B121994998006F9924 /* RTCIceServer+JSON.h in Headers */,
+				F16883C721994A3D006F9924 /* ARDSettingsModel.h in Headers */,
+				F16883C421994A3D006F9924 /* ARDSettingsModel+Private.h in Headers */,
+				F16883CB21994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.h in Headers */,
+				F16882EC21993DA3006F9924 /* ApiController.h in Headers */,
+				F16883B021994998006F9924 /* RTCSessionDescription+JSON.h in Headers */,
+				F16883C621994A3D006F9924 /* ARDSettingsStore.h in Headers */,
+				F16883BA21994A28006F9924 /* RTCAppClient.h in Headers */,
+				F16883AF21994998006F9924 /* RTCMediaConstraints+JSON.h in Headers */,
+				F13686E5219A68A600BE3323 /* ARDCaptureController.h in Headers */,
+				F15FA53E2195774B00256F29 /* Varistar_IOS_Framework.h in Headers */,
+				F15FA5592195B62400256F29 /* JFRSecurity.h in Headers */,
+				F16883BD21994A33006F9924 /* ARDUtilities.h in Headers */,
+				F16883B921994A28006F9924 /* RTCAppClient+Internal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F15FA52C2195774B00256F29 /* IOS_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15FA5412195774B00256F29 /* Build configuration list for PBXNativeTarget "IOS_Framework" */;
+			buildPhases = (
+				F15FA5282195774B00256F29 /* Headers */,
+				F15FA5292195774B00256F29 /* Sources */,
+				F15FA52A2195774B00256F29 /* Frameworks */,
+				F15FA52B2195774B00256F29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOS_Framework;
+			productName = Varistar_IOS_Framework;
+			productReference = F15FA52D2195774B00256F29 /* IOS_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F15FA5352195774B00256F29 /* IOS_FrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15FA5442195774B00256F29 /* Build configuration list for PBXNativeTarget "IOS_FrameworkTests" */;
+			buildPhases = (
+				F15FA5322195774B00256F29 /* Sources */,
+				F15FA5332195774B00256F29 /* Frameworks */,
+				F15FA5342195774B00256F29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15FA5392195774B00256F29 /* PBXTargetDependency */,
+			);
+			name = IOS_FrameworkTests;
+			productName = Varistar_IOS_FrameworkTests;
+			productReference = F15FA5362195774B00256F29 /* IOS_FrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F15FA5242195774B00256F29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = TeamEverywhere;
+				TargetAttributes = {
+					F15FA52C2195774B00256F29 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F15FA5352195774B00256F29 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F15FA5272195774B00256F29 /* Build configuration list for PBXProject "IOS_Framework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F15FA5232195774B00256F29;
+			productRefGroup = F15FA52E2195774B00256F29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F15FA52C2195774B00256F29 /* IOS_Framework */,
+				F15FA5352195774B00256F29 /* IOS_FrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F15FA52B2195774B00256F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15FA55C2195B62400256F29 /* README.md in Resources */,
+				F15FA55A2195B62400256F29 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15FA5342195774B00256F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F15FA5292195774B00256F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16882ED21993DA3006F9924 /* ApiController.m in Sources */,
+				F16883AE21994998006F9924 /* RTCSessionDescription+JSON.m in Sources */,
+				F16883CC21994AF5006F9924 /* RTCVideoCodecInfo+HumanReadable.m in Sources */,
+				F16883B821994A28006F9924 /* RTCAppClient.m in Sources */,
+				F16883B321994998006F9924 /* RTCIceServer+JSON.m in Sources */,
+				F16883BE21994A33006F9924 /* ARDUtilities.m in Sources */,
+				F16883AD21994998006F9924 /* RTCIceCandidate+JSON.m in Sources */,
+				F13686E6219A68A600BE3323 /* ARDCaptureController.m in Sources */,
+				F15FA55E2195B62400256F29 /* JFRWebSocket.m in Sources */,
+				F16883C821994A3D006F9924 /* ARDSettingsStore.m in Sources */,
+				F15FA55D2195B62400256F29 /* JFRSecurity.m in Sources */,
+				F16883C521994A3D006F9924 /* ARDSettingsModel.m in Sources */,
+				F16883B221994998006F9924 /* RTCMediaConstraints+JSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15FA5322195774B00256F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15FA53C2195774B00256F29 /* Varistar_IOS_FrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F15FA5392195774B00256F29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15FA52C2195774B00256F29 /* IOS_Framework */;
+			targetProxy = F15FA5382195774B00256F29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F15FA53F2195774B00256F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F15FA5402195774B00256F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F15FA5422195774B00256F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6F7P8NBHPM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Varistar_IOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TeamEverywhere.Varistar-IOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F15FA5432195774B00256F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6F7P8NBHPM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Varistar_IOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "TeamEverywhere.Varistar-IOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F15FA5452195774B00256F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F7P8NBHPM;
+				INFOPLIST_FILE = Varistar_IOS_FrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TeamEverywhere.Varistar-IOS-FrameworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F15FA5462195774B00256F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F7P8NBHPM;
+				INFOPLIST_FILE = Varistar_IOS_FrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TeamEverywhere.Varistar-IOS-FrameworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F15FA5272195774B00256F29 /* Build configuration list for PBXProject "IOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15FA53F2195774B00256F29 /* Debug */,
+				F15FA5402195774B00256F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15FA5412195774B00256F29 /* Build configuration list for PBXNativeTarget "IOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15FA5422195774B00256F29 /* Debug */,
+				F15FA5432195774B00256F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15FA5442195774B00256F29 /* Build configuration list for PBXNativeTarget "IOS_FrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15FA5452195774B00256F29 /* Debug */,
+				F15FA5462195774B00256F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F15FA5242195774B00256F29 /* Project object */;
+}
